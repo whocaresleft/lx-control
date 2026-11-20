@@ -43,6 +43,11 @@ class PIDController():
         # self.prev_e_heading the previous error. But note that you
         # should be the one to update them also.
 
+        if delta_t > 1.0:
+            self.prev_int_heading = 0.0
+            self.prev_e_heading = 0.0
+            delta_t = 0.0
+
         r_t = theta_ref
         y_t = theta_curr
 
@@ -60,6 +65,7 @@ class PIDController():
         self.prev_int_heading = integral
         self.prev_e_heading = e_t
 
+        print(f"[PID] ref={r_t:.3f} | curr={y_t:.3f} | err={e_t:.3f} | int={integral:.3f} | omega={omega:.3f}", flush=True)
         return v, omega
 
     def OffsetControl(self,
@@ -88,6 +94,11 @@ class PIDController():
         # self.prev_e_offset the previous error. But note that you
         # should be the one to update them also.
 
+        if delta_t > 1.0:
+            self.prev_int_heading = 0.0
+            self.prev_e_heading = 0.0
+            delta_t = 0.0
+
         r_t = y_ref
         y_t = y_curr
 
@@ -104,6 +115,7 @@ class PIDController():
         self.prev_int_offset = integral
         self.prev_e_offset = e_t
 
+        print(f"[PID] ref={r_t:.3f} | curr={y_t:.3f} | err={e_t:.3f} | int={integral:.3f} | omega={omega:.3f}", flush=True)
         return v, omega
 
     def SetGains(self, kp: float, ki: float, kd: float) -> None:
