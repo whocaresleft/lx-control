@@ -1,0 +1,428 @@
+[2K[2KProgress: [>                                                                                                   ] 0%
+[2K  (Pulling 0/1 layers | Pulling from duckietown/dt-duckiematrix ente-amd64)[2K[1A[2K[2KProgress: [>                                                                                                   ] 0%
+[2K  (Pulling 0/1 layers | Digest: sha256:553ec4707091ce71a10305f974cc2fbdf9881932a2d9796bc65c5032068f98a4)[2K[1A[2K[2KProgress: [>                                                                                                   ] 0%
+[2K  (Pulling 0/1 layers | Status: Image is up to date for duckietown/dt-duckiematrix:ente-amd64)[2K[1A[2K[2KDone!
+==> Entrypoint
+   INFO: The environment variable VEHICLE_NAME is not set. Using 'whocaresleft'.
+   INFO: Network configured successfully.
+WARNING: robot_type file does not exist. Using 'duckiebot' as default type.
+WARNING: robot_configuration file does not exist.
+WARNING: robot_hardware file does not exist.
+Impersonating user with UID: 1000
+Impersonating group with GID: 1000
+groupmod: GID '1000' already exists
+<== Entrypoint
+WARNING: Workspace /code not built. Some packages might not be available.
+==> Launching app...
+/usr/local/lib/python3.12/dist-packages/contracts/docstring_parsing.py:120: SyntaxWarning: invalid escape sequence '\s'
+  regexp = "^\s*:\s*%s(?P<type>[^:]*?)\s*:\s*(?P<desc>.*?)\s*$" % key
+/usr/local/lib/python3.12/dist-packages/contracts/docstring_parsing.py:122: SyntaxWarning: invalid escape sequence '\s'
+  regexp = "^\s*:\s*%s\s+(?P<type>[^:]*?)(?P<name>[^\s:]+)\s*:" "\s*(?P<desc>.*?)\s*$" % key
+/usr/local/lib/python3.12/dist-packages/contracts/docstring_parsing.py:122: SyntaxWarning: invalid escape sequence '\s'
+  regexp = "^\s*:\s*%s\s+(?P<type>[^:]*?)(?P<name>[^\s:]+)\s*:" "\s*(?P<desc>.*?)\s*$" % key
+Missing dependency ArduPilotPlugin. Install it from source at https://github.com/TomerTip/PyArduPilotPlugin
+2026-11-07 00:01:29 whocaresleft duckiematrix[49] INFO App status changed [INITIALIZING] -> [RUNNING]
+2026-11-07 00:01:29 whocaresleft duckiematrix[49] INFO Copying map to temporary directory [/tmp/tmpqw_hjpv2/straight]...
+2026-11-07 00:01:29 whocaresleft duckiematrix[49] INFO Map copied successfully.
+2026-11-07 00:01:29 whocaresleft duckiematrix[49] INFO Engine running in REALTIME mode.
+2026-11-07 00:01:29 whocaresleft DataConnector[Matrix][49] INFO Opening link for OUT connector at tcp://0.0.0.0:37451...
+2026-11-07 00:01:29 whocaresleft DataConnector[Matrix][49] INFO Link for OUT connector now open at tcp://0.0.0.0:37451
+2026-11-07 00:01:29 whocaresleft DataConnector[Matrix][49] INFO Opening link for IN connector at tcp://0.0.0.0:38453...
+2026-11-07 00:01:29 whocaresleft DataConnector[Matrix][49] INFO Link for IN connector now open at tcp://0.0.0.0:38453
+2026-11-07 00:01:29 whocaresleft MatrixControlConnector[49] INFO Opening link for OUT connector at tcp://0.0.0.0:7502...
+2026-11-07 00:01:29 whocaresleft MatrixControlConnector[49] INFO Link for OUT connector now open at tcp://0.0.0.0:7502
+2026-11-07 00:01:29 whocaresleft WebSocketBridge[49] INFO Connected ZMQ PUB socket to engine at tcp://0.0.0.0:37451.
+2026-11-07 00:01:29 whocaresleft DataConnector[layer][49] INFO Opening link for OUT connector at tcp://0.0.0.0:35335...
+2026-11-07 00:01:29 whocaresleft DataConnector[layer][49] INFO Link for OUT connector now open at tcp://0.0.0.0:35335
+2026-11-07 00:01:29 whocaresleft WorldConnector[49] INFO Opening DTPS World connector...
+2026-11-07 00:01:29 whocaresleft WorldSide[49] INFO Waiting for the 'map' data connector to start...
+2026-11-07 00:01:29 whocaresleft dtps_http.self[49] INFO Starting clock dtps/clock/ with interval 1.0
+2026-11-07 00:01:29 whocaresleft dtps_http[49] INFO Starting TCP server - the URL is 'http://0.0.0.0:7501/'
+2026-11-07 00:01:29 whocaresleft dtps_http[49] INFO starting Unix server on path /tmp/dtps-self-e7f2ad60
+2026-11-07 00:01:29 whocaresleft dtps_http[49] INFO available URLs
+* http://192.168.1.189:7501/
+* http://192.168.122.1:7501/
+* http://172.17.0.1:7501/
+* http://169.254.159.21:7501/
+* http://169.254.23.66:7501/
+* http://whocaresleft:7501/
+* http://[2001:b07:5d29:eaea:4922:d6fd:f7f4:1f5f]:7501/
+* http+unix://%2Ftmp%2Fdtps-self-e7f2ad60/
+
+2026-11-07 00:01:30 whocaresleft WorldSide[49] INFO Waiting for the 'frames' publisher to be created...
+2026-11-07 00:01:31 whocaresleft WorldSide[49] INFO Publishing 'frames' data...
+2026-11-07 00:01:31 whocaresleft WorldSide[49] INFO Published 'frames' data.
+2026-11-07 00:01:31 whocaresleft WorldSide[49] INFO Waiting for the 'tile_maps' publisher to be created...
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=4194304"
+    "memorysetup-bucket-allocator-block-count=1"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=4194304"
+    "memorysetup-profiler-bucket-allocator-block-count=1"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=4194304"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Preloaded 'lib_burst_generated.so'
+Input System module state changed to: Initialized.
+Display 0 'XWAYLAND0 23"': 1896x1018 (primary device).
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Desktop is 1896 x 1018 @ 60 Hz
+[Vulkan init] extensions: count=25
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_headless_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+Vulkan detection: 2
+Initialize engine version: 2022.3.62f2 (7670c08855a9)
+[Subsystems] Discovering subsystems at path /home/nicolasborra/.duckietown/duckiematrix/releases/v0.14.0-linux/duckiematrix_Data/UnitySubsystems
+Forcing GfxDevice: Vulkan
+GfxDevice: creating device client; threaded=1; jobified=1
+[Vulkan init] extensions: count=25
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_headless_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=(nil)
+[Vulkan init] Physical Device 0x15e80890 [0]: "Intel(R) HD Graphics 620 (KBL GT2)" deviceType=1 vendorID=8086 deviceID=5916
+[Vulkan init] Selected physical device 0x15e80890
+[Vulkan init] Graphics queue count=1
+[Vulkan init] extensions: count=194
+[Vulkan init] extensions: name=VK_AMD_buffer_marker [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_border_color_swizzle [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conservative_rasterization [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_marker [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_bias_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clamp_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clamp_zero_one [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_heap [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_device_address_binding_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_device_memory_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_dynamic_rendering_unused_attachments [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_acquire_unmodified [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_dma_buf [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_host [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_fragment_shader_interlock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_graphics_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_hdr_metadata [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_image_copy [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_2d_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_drm_format_modifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_sliced_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_view_min_lod [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_legacy_dithering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_legacy_vertex_attributes [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_map_memory_placed [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_budget [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_multi_draw [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_mutable_descriptor_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_nested_command_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_non_seamless_cube_map [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pci_bus_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_physical_device_drm [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_post_depth_coverage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_present_timing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitive_restart_index [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitives_generated_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sample_locations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_image_atomic_int64 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_module_identifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_object [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_replicated_composites [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_stencil_export [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_uniform_buffer_unsized_array [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_tooling_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_2plane_444_formats [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_decorate_string [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_hlsl_functionality1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_user_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_INTEL_shader_integer_functions2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_compute_shader_derivatives [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_copy_memory_indirect [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_deferred_host_operations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_depth_clamp_zero_one [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_address_commands [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering_local_read [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_incremental_present [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_internally_synchronized_queues [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_load_store_op_none [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance10 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance11 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance5 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance6 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance7 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance9 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_map_memory2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_binary [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_id [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_id2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_wait [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_wait2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_robustness2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_constant_data [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_expect_assume [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_fma [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_maximal_reconvergence [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_quad_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_relaxed_extended_instruction [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_rotate [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_uniform_control_flow [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_untyped_pointers [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_MESA_image_alignment_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_compute_shader_derivatives [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_VALVE_mutable_descriptor_type [enabled=0, external=0]
+Vulkan API version 1.1.0 (1.4.354 supported by driver, 1.1.0 requested)
+Vulkan vendor=[Intel] id=[8086]
+Vulkan renderer=[Intel(R) HD Graphics 620 (KBL GT2)] id=[5916]
+Vulkan device type 1
+Vulkan driverversion=[0x06802006] uint=[109060102]
+Vulkan PSO: cache data not found [path=/tmp/Duckietown/Duckiematrix/vulkan_pso_cache.bin]
+requesting resize 941 x 1018
+resizing window to 941 x 1018
+Desktop is 1896 x 1018 @ 60 Hz
+InitializeOrResetSwapChain 941x1018 hdr=0 samples=1
+2026-11-07 00:01:32 whocaresleft WorldSide[49] INFO Publishing 'tile_maps' data...
+2026-11-07 00:01:32 whocaresleft WorldSide[49] INFO Published 'tile_maps' data.
+2026-11-07 00:01:32 whocaresleft WorldSide[49] INFO Waiting for the 'tiles' publisher to be created...
+2026-11-07 00:01:33 whocaresleft WorldSide[49] INFO Publishing 'tiles' data...
+2026-11-07 00:01:33 whocaresleft WorldSide[49] INFO Published 'tiles' data.
+2026-11-07 00:01:33 whocaresleft WorldSide[49] INFO Waiting for the 'traffic_signs' publisher to be created...
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+UnloadTime: 0.751764 ms
+2026-11-07 00:01:34 whocaresleft WorldSide[49] INFO Publishing 'traffic_signs' data...
+2026-11-07 00:01:34 whocaresleft WorldSide[49] INFO Published 'traffic_signs' data.
+2026-11-07 00:01:34 whocaresleft duckiematrix[49] INFO [Entity]: Creating entity [duckiebot]:map_0/vehicle_0...
+2026-11-07 00:01:34 whocaresleft Entity[map_0/vehicle_0][49] INFO Generating 'lens_distortion' UV texture assets.
+[INFO]: Arguments:
+[INFO]: 	tutorial: True
+[INFO]: 	token: dt2-Npc1n4fne9txYPw32MbhSmnyg9ERLBiLS39DkgRVZkEYrEF2saEWfSKhipyKseMhusxYKpJeVkEedLkpMr-******************************************************************
+[INFO]: 	billboard: Get started faster with the Duckietown documentation: https://docs.duckietown.com/ente/
+[INFO]: 	billboards_path: /home/nicolasborra/.duckietown/shell/databases/billboards.yaml
+[INFO]: 	billboard_names: {"Ad-Autolab": 1, "Ad-Class-in-a-box": 1, "Ad-MOOC1": 1, "Ad-linkedin": 1, "Community-GetHelp": 1, "Daffy-Ente": 1, "Docs-GettingStarted": 1, "Fun-BigDuck": 1, "Fun-love": 1, "HelpTip-ContextSharing": 1, "ProTip-10pm": 1, "ProTip-Energy": 1, "ProTip-Patience": 1, "ProTip-Perfection": 1, "ProTip-Slowly": 1, "ProTip-Testing": 1, "TechTip-CopyAndPaste": 1, "TechTip-DBpower": 1, "TechTip-ReadLogs": 1, "TechTip-StablePower": 1, "Trivia-Conquer-Earth": 1, "Trivia-MIT": 1, "Trivia-NIPS18": 1, "Trivia-companies": 1, "Trivia-countries": 1, "Trivia-uni": 1, "UEd-Feedback": 1, "UEd-SO": 1, "UEd-Slack": 1}
+[WARNING]: Rejoining the Engine: Engine control request timed out.
+[INFO]: Control OUT Connector: thread ended
+[INFO]: Control OUT Connector: terminated
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+UnloadTime: 1.652831 ms
+[INFO]: Arguments:
+[INFO]: 	tutorial: True
+[INFO]: 	token: dt2-Npc1n4fne9txYPw32MbhSmnyg9ERLBiLS39DkgRVZkEYrEF2saEWfSKhipyKseMhusxYKpJeVkEedLkpMr-******************************************************************
+[INFO]: 	billboard: Get started faster with the Duckietown documentation: https://docs.duckietown.com/ente/
+[INFO]: 	billboards_path: /home/nicolasborra/.duckietown/shell/databases/billboards.yaml
+[INFO]: 	billboard_names: {"Ad-Autolab": 1, "Ad-Class-in-a-box": 1, "Ad-MOOC1": 1, "Ad-linkedin": 1, "Community-GetHelp": 1, "Daffy-Ente": 1, "Docs-GettingStarted": 1, "Fun-BigDuck": 1, "Fun-love": 1, "HelpTip-ContextSharing": 1, "ProTip-10pm": 1, "ProTip-Energy": 1, "ProTip-Patience": 1, "ProTip-Perfection": 1, "ProTip-Slowly": 1, "ProTip-Testing": 1, "TechTip-CopyAndPaste": 1, "TechTip-DBpower": 1, "TechTip-ReadLogs": 1, "TechTip-StablePower": 1, "Trivia-Conquer-Earth": 1, "Trivia-MIT": 1, "Trivia-NIPS18": 1, "Trivia-companies": 1, "Trivia-countries": 1, "Trivia-uni": 1, "UEd-Feedback": 1, "UEd-SO": 1, "UEd-Slack": 1}
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1699.
+Total: 8.004826 ms (FindLiveObjects: 0.197815 ms CreateObjectMapping: 0.127125 ms MarkObjects: 7.628714 ms  DeleteObjects: 0.050408 ms)
+
+2026-11-07 00:02:22 whocaresleft duckiematrix[49] INFO Updated maximum period. Old=0.000, Requested=0.033, New=0.033
+2026-11-07 00:02:22 whocaresleft duckiematrix[49] INFO [Entity]: Registered new entity with key 'map_0/vehicle_0/camera_0':
+	Matrix:[map_0/vehicle_0/camera_0] <-|
+2026-11-07 00:02:22 whocaresleft duckiematrix[49] INFO Updated maximum period. Old=0.033, Requested=0.067, New=0.033
+2026-11-07 00:02:22 whocaresleft duckiematrix[49] INFO [Entity]: Registered new entity with key 'map_0/vehicle_0/tof_front_center':
+	Matrix:[map_0/vehicle_0/tof_front_center] <-|
+2026-11-07 00:02:22 whocaresleft duckiematrix[49] INFO [Entity]: Registered new entity with key 'map_0/vehicle_0':
+	Matrix:[map_0/vehicle_0] <-> [map_0/vehicle_0]:World
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Creating subscription for key=map_0/vehicle_0/actuator/lights/base/pattern
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Subscription created for key=map_0/vehicle_0/actuator/lights/base/pattern, type=ContextManagerCreateContextSubscriber
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Creating subscription for key=map_0/vehicle_0/state/reset
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Subscription created for key=map_0/vehicle_0/state/reset, type=ContextManagerCreateContextSubscriber
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Creating subscription for key=map_0/vehicle_0/actuator/wheels/base/pwm_filtered
+2026-11-07 00:02:22 whocaresleft DataConnector[robot][49] INFO [DTPS] Subscription created for key=map_0/vehicle_0/actuator/wheels/base/pwm_filtered, type=ContextManagerCreateContextSubscriber
+2026-11-07 00:02:23 whocaresleft Helper[ScriptableMap][49] INFO Initialized on /tmp/tmpqw_hjpv2/straight/scripts
+2026-11-07 00:02:23 whocaresleft Helper[ScriptableMap][49] INFO Found 0 scripts.
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Starting Control OUT WebSocket server...
+2026-11-07 00:02:23 whocaresleft duckiematrix[49] INFO Configured executor workers=4 (cpu=4, flush=1, early=1, update=4, late=0)
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Control OUT WebSocket server started and listening on ws://0.0.0.0:7503.
+2026-11-07 00:02:23 whocaresleft duckiematrix[49] INFO The Engine can be reached at any of these IP addresses:
+
+	 -  127.0.0.1         	(local machine only)
+	 -  192.168.1.189     	(local network only)
+	 -  192.168.122.1     	(local network only)
+	 -  172.17.0.1        	(local machine only)
+	 -  169.254.159.21    
+	 -  169.254.23.66     
+
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Starting Data IN WebSocket server...
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Data IN WebSocket server started and listening on ws://0.0.0.0:7505.
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Starting Data OUT WebSocket server...
+[INFO]: REJECTED: The engine reports that the network is full.
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Data OUT WebSocket server started and listening on ws://0.0.0.0:7504.
+2026-11-07 00:02:23 whocaresleft WebSocketBridge[49] INFO Polling ZeroMQ data OUT socket at tcp://0.0.0.0:38453...
+2026-11-07 00:03:44 whocaresleft duckiematrix[49] INFO Shutdown request received! Gracefully terminating....
+2026-11-07 00:03:44 whocaresleft duckiematrix[49] INFO Press [Ctrl+C] three times to force kill.
+<== App terminated!
+
+dts :  User aborted operation.

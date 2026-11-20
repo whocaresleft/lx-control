@@ -43,8 +43,23 @@ class PIDController():
         # self.prev_e_heading the previous error. But note that you
         # should be the one to update them also.
 
+        r_t = theta_ref
+        y_t = theta_curr
+
+        e_t = r_t - y_t
+        e_t = np.arctan2(np.sin(e_t), np.cos(e_t)) # Normalizing angular error between [-pi, +pi]
+        
+        integral = self.prev_int_heading + e_t * delta_t
+        integral = np.clip(integral, -2.0, 2.0)
+
+        derivative = (e_t - self.prev_e_heading) / delta_t if delta_t > 0.0 else 0.0
+
+        omega = self.kp * e_t + self.ki * integral + self.kd * derivative
         v = v_ref
-        omega = np.random.uniform(-8.0, 8.0)
+
+        self.prev_int_heading = integral
+        self.prev_e_heading = e_t
+
         return v, omega
 
     def OffsetControl(self,
@@ -73,8 +88,22 @@ class PIDController():
         # self.prev_e_offset the previous error. But note that you
         # should be the one to update them also.
 
-        omega = np.random.uniform(-8.0, 8.0)
+        r_t = y_ref
+        y_t = y_curr
+
+        e_t = r_t - y_t    
+        
+        integral = self.prev_int_offset + e_t * delta_t
+        integral = np.clip(integral, -2.0, 2.0)
+
+        derivative = (e_t - self.prev_e_offset) / delta_t if delta_t > 0.0 else 0.0
+
+        omega = self.kp * e_t + self.ki * integral + self.kd * derivative
         v = v_ref
+
+        self.prev_int_offset = integral
+        self.prev_e_offset = e_t
+
         return v, omega
 
     def SetGains(self, kp: float, ki: float, kd: float) -> None:
@@ -82,3 +111,7 @@ class PIDController():
         self.kp = kp
         self.ki = ki
         self.kd = kd
+        self.prev_e_heading = 0.0
+        self.prev_e_offset = 0.0
+        self.prev_int_heading = 0.0
+        self.prev_int_offset = 0.0
